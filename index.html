@@ -457,8 +457,9 @@ $("#form").addEventListener("submit",async e=>{
       code:CODE,
       source:SOURCE,
       submitted_at:new Date().toISOString(),
-      questions:questionsStr,
+      total: questionsStr,
       categoria:interpret,
+      questions:questionsStr,
       metrics:JSON.stringify({total,answers,duration_sec:durationSec})
     };
 
